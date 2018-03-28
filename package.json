@@ -1,0 +1,45 @@
+{
+  "name": "simple-react-template-parcel",
+  "version": "1.0.0",
+  "description": "A super simple and easy to use React template for SPA projects",
+  "main": "index.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development parcel index.html ",
+    "build": "cross-env NODE_ENV=production parcel build index.html --no-minify --public-url /"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dasmikko/simple-react-template-parcel.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dasmikko/simple-react-template-parcel/issues"
+  },
+  "homepage": "https://github.com/dasmikko/simple-react-template-parcel#readme",
+  "devDependencies": {
+    "cross-env": "^5.1.1"
+  },
+  "dependencies": {
+    "autoprefixer": "^7.2.1",
+    "babel-preset-react-app": "^3.1.0",
+    "parcel-bundler": "latest",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  },
+  "postcss": {
+    "modules": false,
+    "plugins": {
+      "autoprefixer": {
+        "browsers": [
+          ">1%",
+          "last 4 versions",
+          "Firefox ESR",
+          "not ie < 9"
+        ],
+        "flexbox": "no-2009"
+      }
+    }
+  }
+}
